@@ -1,0 +1,133 @@
+.pagenavi-post-wrap {
+  padding: 10px 0;
+}
+
+.pagenavi-post {
+  &__prev-postlink,
+  &__page,
+  &__next-postlink {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.2rem;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    padding: 5px 3px;
+    margin: 0 4px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    &:hover{
+      color: #ffffff;
+      background: #0097a7;
+    }
+  }
+  &__current {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.143rem;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    padding: 0 3px;
+    margin: 0 3px;
+    letter-spacing: 1px;
+    background-color: #f3f6f6;
+  }
+  &__prev-postlink {
+  }
+  &__page {
+  }
+  &__next-postlink {
+  }
+}
+/* pagination posts__end*/
+
+
+
+/* pagination article*/
+.article-pagination{
+  padding: 5px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  &__block{
+    max-width: 360px;
+  }
+  &__link{
+      font-size: 18px;
+      font-family: "Lato", sans-serif;
+      color: rgb(33, 33, 33);
+      line-height: 1.444rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover,
+    &focus{
+      text-decoration: underline;
+      color: #0097a7;
+    }
+  }
+}
+.wrap-pagination-preview{
+  display: flex;
+  padding: 10px 0;
+
+}
+.preview-article__info{
+  margin-bottom: 15px;
+}
+.preview-article__img{
+  flex: 1 1 50%;
+}
+.preview-article__content{
+  flex: 1 1 50%;
+  padding: 0 10px;
+}
+.preview-article__text{
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    color: rgb(114, 114, 114);
+    line-height: 1.429;
+}
+
+.pagination-prev-left{
+  text-align: left;
+  .preview-article__img{
+    order: 1;
+  }
+  .preview-article__content{
+    order: 2;
+  }
+}
+.pagination-prev-right{
+  text-align: right;
+  .preview-article__img{
+    order: 2;
+  }
+  .preview-article__content{
+    order: 1;
+  }
+}
+
+/*pagination page*/
+
+.page-navigation{
+  display: flex;
+  justify-content: space-between;
+  .page-navigation-wrap{
+
+    a.page-navigation__prev-page,
+    a.page-navigation__next-page{
+        font-size: 1.2rem;
+        font-family: "Lato", sans-serif;
+        color: rgb(0, 151, 167);
+        line-height: 1.444rem;
+      text-decoration: none;
+      &:hover,
+      &:focus{
+        text-decoration: underline;
+      }
+    }
+
+
+  }
+}

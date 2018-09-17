@@ -1,0 +1,43 @@
+@media screen and(max-width: 768px){
+  html{
+    font-size: 12px;
+  }
+  .top-header__wrap{
+    flex-wrap: wrap;
+    height: 400px;
+    .logotype-block{
+      flex-basis: 100%;
+    }
+    .main-navigation{
+      flex-basis: 100%;
+
+      .nav-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item{
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  .bottom-header{
+    justify-content: center;
+  }
+
+
+  .content-wrapper{
+    flex-wrap: wrap;
+    .content{
+
+    }
+    .sidebar{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &__item{
+        flex: 1 1 50%;
+      }
+    }
+  }
+}

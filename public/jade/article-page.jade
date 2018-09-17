@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru')
+    head
+        title Страница поста
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel='stylesheet', href='css/libs.min.css')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/media.css')
+    body
+        .wrapper
+            include _parts/header
+            // header_end
+            .main-content
+                .content-wrapper
+                    .content
+                        include _parts/article-content
+                        include _parts/pagination_article
+                    // sidebar
+                    include _parts/sidebar
+
+            include _parts/footer
+
+        // wrapper_end
+        script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+        script(src='js/main.js')
