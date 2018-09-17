@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 
 // gulp jade
-gulp.task('jade', function() {
+gulp.task('jade', function () {
     gulp.src('app/jade/*.jade')
         .pipe(jade({
             pretty: true
